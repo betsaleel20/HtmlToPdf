@@ -1,0 +1,30 @@
+@charset "utf-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background-color: #f2fae3;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.container {
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #45b9e1;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #45b9e1;
+}
