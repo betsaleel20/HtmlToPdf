@@ -8,7 +8,7 @@ class HtmlToPdf extends PDF
 
     public function buildPdf(): bool
     {
-        $name = "htmlToPdf_" . time() . ".pdf";
+        $name = "htmlToPdf_".date('d_m_Y')."_" . time() . ".pdf";
 
         ob_start();
         require realpath('/opt/lampp/htdocs/crinaserver/WkHtmlToPdf/src/GeneratePdf/sections/header.html');
@@ -51,12 +51,10 @@ class HtmlToPdf extends PDF
         $option1 = [
             'header-right' => 'I am the Header put on the right',
             'title' => 'Title of the generated File',
-            'header-spacing' => 1,
             'page-size' => 'A4',
             'orientation'      => 'Landscape',
             'page-offset' => 2,
             'footer-left' => 'the footer(font: 10px)',
-            'footer-line' => true,
             'footer-font-size' => 10,
             'user-style-sheet' => "file:///opt/lampp/htdocs/crinaserver/WkHtmlToPdf/src/GeneratePdf/Css/style.css",
         ];
@@ -66,9 +64,11 @@ class HtmlToPdf extends PDF
         $pdf->setOptions($option1);
         $pdf->addPage($content);
         $state = $pdf->saveAs($name);
+
         if(!$state){
             die(var_dump($pdf->_error));
         }
+
         return $pdf->_isCreated;
     }
 

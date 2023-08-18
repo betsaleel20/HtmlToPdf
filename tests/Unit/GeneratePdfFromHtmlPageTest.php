@@ -12,10 +12,6 @@ class GeneratePdfFromHtmlPageTest extends TestCase
         parent::setUp();
     }
 
-    public function test_say_true()
-    {
-        $this->assertTrue(true);
-    }
     public function test_can_generate_pdf_file()
     {
         //Given

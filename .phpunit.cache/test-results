@@ -1,1 +1,1 @@
-{"version":1,"defects":{"Tests\\Unit\\GeneratePdfFromHtmlPageTest::test_can_generate_pdf_file":7},"times":{"Tests\\Unit\\GeneratePdfFromHtmlPageTest::test_say_true":0.004,"Tests\\Unit\\GeneratePdfFromHtmlPageTest::test_can_generate_pdf_file":0.757}}
+{"version":1,"defects":{"Tests\\Unit\\GeneratePdfFromHtmlPageTest::test_can_generate_pdf_file":7},"times":{"Tests\\Unit\\GeneratePdfFromHtmlPageTest::test_say_true":0.004,"Tests\\Unit\\GeneratePdfFromHtmlPageTest::test_can_generate_pdf_file":0.754}}
